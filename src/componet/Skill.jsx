@@ -48,6 +48,28 @@ function Skill() {
       category: "CSS Framework"
     },
     {
+  name: "HTML",
+  icon: (
+    <svg className="w-8 h-8 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5" />
+      <text x="5" y="18" fontSize="8" fill="#fff" fontWeight="bold">HTML</text>
+    </svg>
+  ),
+  desc: "Markup language for structuring web content.",
+  category: "Frontend"
+},
+{
+  name: "CSS",
+  icon: (
+    <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="5" />
+      <text x="6" y="18" fontSize="8" fill="#fff" fontWeight="bold">CSS</text>
+    </svg>
+  ),
+  desc: "Style sheet language for designing web pages.",
+  category: "Frontend"
+},
+    {
       name: "Node.js",
       icon: (
         <svg
