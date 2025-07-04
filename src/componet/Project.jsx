@@ -1,7 +1,11 @@
 import { Github, ExternalLink } from "lucide-react";
 import React, { useState, useEffect } from "react";
- import  clock from '../
-
+import  clock from '../assets/projectpics/time.png';
+import previousportfilo from '../assets/projectpics/portfolio1.png';
+import taskmanagementsystem   from '../assets/projectpics/task management system .png'
+import  expressloom from '../assets/projectpics/expressloom index page.png';
+import  usermanangementsytem from '../assets/projectpics/usermanangement sytem.png'; 
+import ecommerce from '../assets/projectpics/eCommerce site.png'
 function Project() {
   // Add a showMore state for each card that needs "see more"
   const [showMore, setShowMore] = useState([false, false, false, false, false]);
@@ -28,7 +32,7 @@ function Project() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mx-2 sm:mx-4 md:mx-8">
         {/* project card 1 */}
         <div className="card-bg dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300 flex flex-col hover:w-[110%] hover:scale-105">
-          <img src="../projectpics/expressloom%20index%20page.png" alt="Project 1" className="w-full h-36 object-cover"/>
+          <img src={expressloom } alt="Project 1" className="w-full h-36 object-cover"/>
           <div className="flex-1 flex flex-col p-5 pb-3">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">
               🚚 Expressloom (First Fullstack project with html,css, Bootstrap,php, MySQL)
@@ -58,7 +62,7 @@ function Project() {
         </div>
         {/* project card 2 */}
         <div className="card-bg rounded-lg shadow-md overflow-hidden transition-all duration-300 flex flex-col hover:w-[110%] hover:scale-105">
-          <img src="../projectpics/eCommerce site.png" alt="Project 2" className="w-full h-36 object-cover"/>
+          <img src={ecommerce} alt="Project 2" className="w-full h-36 object-cover"/>
           <div className="flex-1 flex flex-col p-5 pb-3">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">
               Simple E-commerce Website   (First Frontend project with HTML, CSS )
@@ -101,7 +105,7 @@ function Project() {
         </div>
         {/* project card 3 */}
         <div className="card-bg rounded-lg shadow-md overflow-hidden transition-all duration-300 flex flex-col hover:w-[110%] hover:scale-105">
-          <img src="../projectpics/task management system .png" alt="Project 3" className="w-full h-36 object-cover"/>
+          <img src={taskmanagementsystem} alt="Project 3" className="w-full h-36 object-cover"/>
           <div className="flex-1 flex flex-col p-5 pb-3">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Task Management App (React)</h2>
             <p className="text-blue-600 dark:text-blue-300 text-sm break-words">
@@ -128,7 +132,7 @@ function Project() {
         </div>
         {/* project card 4 */}
         <div className="card-bg rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:w-[110%] hover:scale-105 flex flex-col">
-          <img src="" alt="Project 4" className="w-full h-48 object-cover"/>
+          <img src={clock} alt="Project 4" className="w-full h-48 object-cover"/>
           <div className="flex-1 flex flex-col p-4 pb-2">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Built Clock with React</h2>
             <p className="text-blue-600 dark:text-blue-300 text-sm break-words">
@@ -160,7 +164,7 @@ function Project() {
         </div>
         {/* project card 5 */}
         <div className="card-bg rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:w-[110%] hover:scale-105 flex flex-col">
-          <img src="../projectpics/portfolio1.png" alt="Project 5" className="w-full h-48 object-cover"/>
+          <img src={previousportfilo} alt="Project 5" className="w-full h-48 object-cover"/>
           <div className="p-4 pb-2 flex-1 flex flex-col">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Previous Portfolio</h2>
             <p className="text-blue-600 dark:text-blue-300 text-sm break-words">
@@ -186,7 +190,7 @@ function Project() {
         </div>
         {/* project card 6 */}
         <div className="card-bg rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:w-[110%] hover:scale-105">
-          <img src="../projectpics/usermanangement sytem.png" alt="Project 6" className="w-full h-48 object-cover"/>
+          <img src={usermanangementsytem} alt="Project 6" className="w-full h-48 object-cover"/>
           <div className="p-4 pb-2">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">User Management System</h2>
             <p className="text-blue-600 dark:text-blue-300 text-sm break-words">
