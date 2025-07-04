@@ -1,16 +1,25 @@
 import Navbar from "../navbar";
 import { Github, ExternalLink } from "lucide-react";
 import React, { useState, useEffect } from "react";
+import    expressloom from "../projectpics/expressloom index page.png"; 
+import    eCommerce from "../projectpics/eCommerce site.png";
+import    taskManagement from "../projectpics/task management system .png";
+import    builtClock from "../projectpics/time.png";
+import    porforlio from "../projectpics/portfolio1.png";
+import UserManagementSystem from "../projectpics/usermanangementsytem.png";
+import    stopwatch from "../projectpics/stopwatch .png";
+
+
 
 function Project() {
   // Add a showMore state for each card that needs "see more"
-  const [showMore, setShowMore] = useState([false, false, false, false, false]);
+  const [showMore, setShowMore] = useState([false, false, false, false, false,false]);
 
-  // Ensure showMore always has 5 elements (for 5 cards)
+  // Ensure showMore always has 6 elements (for 5 cards)
   useEffect(() => {
     setShowMore(prev => {
-      if (prev.length < 5) return [...prev, ...Array(5 - prev.length).fill(false)];
-      if (prev.length > 5) return prev.slice(0, 5);
+      if (prev.length < 6) return [...prev, ...Array(6 - prev.length).fill(false)];
+      if (prev.length > 6) return prev.slice(0, 7);
       return prev;
     });
   }, []);
@@ -28,7 +37,7 @@ function Project() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mx-2 sm:mx-4 md:mx-8">
         {/* project card 1 */}
         <div className="card-bg dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300 flex flex-col hover:w-[110%] hover:scale-105">
-          <img src="/projectpics/expressloom index page.png" alt="Project 1" className="w-full h-36 object-cover"/>
+          <img src={expressloom } alt="Project 1" className="w-full h-36 object-cover"/>
           <div className="flex-1 flex flex-col p-5 pb-3">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">
               🚚 Expressloom (First Fullstack project with html,css, Bootstrap,php, MySQL)
@@ -58,7 +67,7 @@ function Project() {
         </div>
         {/* project card 2 */}
         <div className="card-bg rounded-lg shadow-md overflow-hidden transition-all duration-300 flex flex-col hover:w-[110%] hover:scale-105">
-          <img src="/projectpics/eCommerce site.png" alt="Project 2" className="w-full h-36 object-cover"/>
+          <img src={eCommerce} alt="Project 2" className="w-full h-36 object-cover"/>
           <div className="flex-1 flex flex-col p-5 pb-3">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">
               Simple E-commerce Website   (First Frontend project with HTML, CSS )
@@ -101,7 +110,7 @@ function Project() {
         </div>
         {/* project card 3 */}
         <div className="card-bg rounded-lg shadow-md overflow-hidden transition-all duration-300 flex flex-col hover:w-[110%] hover:scale-105">
-          <img src="/projectpics/task management system .png" alt="Project 3" className="w-full h-36 object-cover"/>
+          <img src={taskManagement} alt="Project 3" className="w-full h-36 object-cover"/>
           <div className="flex-1 flex flex-col p-5 pb-3">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Task Management App (React)</h2>
             <p className="text-blue-600 dark:text-blue-300 text-sm break-words">
@@ -128,7 +137,7 @@ function Project() {
         </div>
         {/* project card 4 */}
         <div className="card-bg rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:w-[110%] hover:scale-105 flex flex-col">
-          <img src="/projectpics/time.png" alt="Project 4" className="w-full h-48 object-cover"/>
+          <img src={builtClock} alt="Project 4" className="w-full h-48 object-cover"/>
           <div className="flex-1 flex flex-col p-4 pb-2">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Built Clock with React</h2>
             <p className="text-blue-600 dark:text-blue-300 text-sm break-words">
@@ -160,7 +169,7 @@ function Project() {
         </div>
         {/* project card 5 */}
         <div className="card-bg rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:w-[110%] hover:scale-105 flex flex-col">
-          <img src="/projectpics/portfolio1.png" alt="Project 5" className="w-full h-48 object-cover"/>
+          <img src={porforlio} alt="Project 5" className="w-full h-48 object-cover"/>
           <div className="p-4 pb-2 flex-1 flex flex-col">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Previous Portfolio</h2>
             <p className="text-blue-600 dark:text-blue-300 text-sm break-words">
@@ -186,44 +195,17 @@ function Project() {
         </div>
         {/* project card 6 */}
         <div className="card-bg rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:w-[110%] hover:scale-105">
-          <img src="/projectpics/usermanangement sytem.png" alt="Project 6" className="w-full h-48 object-cover"/>
+          <img src={UserManagementSystem} alt="Project 6" className="w-full h-48 object-cover"/>
           <div className="p-4 pb-2">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">User Management System</h2>
             <p className="text-blue-600 dark:text-blue-300 text-sm break-words">
               This <span className="font-semibold text-blue-700">User Management System</span> project was built using <span className="font-semibold text-blue-700">PHP</span>, <span className="font-semibold text-blue-700">CSS</span>, <span className="font-semibold text-blue-700">HTML</span>, and <span className="font-semibold text-blue-700">SQL</span>. I developed it while working on my first project (<span className="font-semibold text-blue-700">Expressloom</span>). It allows for basic user CRUD operations and demonstrates my understanding of backend and frontend integration at an early stage of my learning journey.
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/iyousojo/user-management-system/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
               </a>
-              <a href="https://example.com/" target="_blank" rel="noopener noreferrer" aria-label="Live Link">
-                <ExternalLink size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* project card 7 */}
-        <div className="card-bg rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:w-[110%] hover:scale-105">
-          <img src="/projectpics/stopwatch .png" alt="Project 7" className="w-full h-48 object-cover"/>
-          <div className="p-4 pb-2">
-            <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Stopwatch App</h2>
-            <p className="text-blue-600 dark:text-blue-300 text-sm break-words">
-              This is a simple yet functional stopwatch application built with <span className="font-semibold text-blue-700">HTML</span>, <span className="font-semibold text-blue-700">CSS</span>, and <span className="font-semibold text-blue-700">JavaScript</span>. It allows users to start, stop, and reset the timer, providing a basic but effective tool for time management.
-              {!showMore[5] && <>... <button className="text-blue-700 underline" onClick={() => handleToggle(5)}>See more</button></>}
-              {showMore[5] && (
-                <>
-                  <br />
-                  The app features a clean interface with large, easy-to-read numbers and responsive buttons. It's designed to be simple and straightforward, focusing on the core functionality of a stopwatch.<br />
-                  This project was a great exercise in building interactive web applications and improving my skills in <span className="font-semibold text-blue-700">JavaScript</span> for dynamic content updates.
-                  <button className="ml-2 text-blue-700 underline" onClick={() => handleToggle(5)}>See less</button>
-                </>
-              )}
-            </p>
-            <div className="flex space-x-4 mt-4">
-              <a href="https://github.com/iyousojo/stopwatch-app.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <Github size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
-              </a>
-              <a href="https://iyousojo.github.io/stopwatch-app/" target="_blank" rel="noopener noreferrer" aria-label="Live Link">
+              <a href="https://github.com/iyousojo/user-management-system-" target="_blank" rel="noopener noreferrer" aria-label="Live Link">
                 <ExternalLink size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
               </a>
             </div>
@@ -234,4 +216,3 @@ function Project() {
   );
 }
 export default Project;
-export { Project };
