@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Linkedin,Github } from "lucide-react";
 import { X } from "lucide-react";
 import { Toaster, toast } from "react-hot-toast";
 import emailjs from "emailjs-com";
@@ -60,8 +60,11 @@ function Contact() {
               <a href="https://x.com/Argonixtech" target="_blank" rel="noopener noreferrer" aria-label="X">
                 <X className="text-blue-700 dark:text-blue-300 hover:text-blue-500 transition-colors drop-shadow-[0_0_6px_rgba(59,130,246,0.7)]" size={28} />
               </a>
-              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a href="https://www.instagram.com/agonixtechsolutions/profilecard/?igsh=cXQwdWFlbXNzdW1p" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <Instagram className="text-pink-600 dark:text-pink-400 hover:text-pink-500 transition-colors drop-shadow-[0_0_6px_rgba(236,72,153,0.7)]" size={28} />
+              </a>
+             <a href="https://github.com/iyousojo" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <Github className="text-blue-600 dark:text-blue-400 hover:text-blue-500 transition-colors drop-shadow-[0_0_6px_rgba(59,130,246,0.7)]" size={28} />
               </a>
               <a href="https://www.linkedin.com/in/solomon-iyoubhebhe-8347682b1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="text-blue-700 dark:text-blue-300 hover:text-blue-500 transition-colors drop-shadow-[0_0_6px_rgba(59,130,246,0.7)]" size={28} />
