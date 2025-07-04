@@ -32,7 +32,7 @@ function Banner2() {
       key={displayed.length === 0 && typing ? Math.random() : "static"}
       className="flex w-full p-2 sm:p-4 md:p-6 mt-16 mb-32 border-b-4 border-blue-100 relative"
       style={{
-        minHeight: "80vh",
+      
         minHeight: "max(80vh, 480px)",
         // Responsive minHeight for small screens
         // 80vh for most, but at small screens, at least 480px
