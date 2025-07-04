@@ -19,7 +19,7 @@ function Project() {
   useEffect(() => {
     setShowMore(prev => {
       if (prev.length < 6) return [...prev, ...Array(6 - prev.length).fill(false)];
-      if (prev.length > 6) return prev.slice(0, 7);
+      if (prev.length > 6) return prev.slice(0, 6);
       return prev;
     });
   }, []);
