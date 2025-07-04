@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+html {
+    @apply scroll-smooth;
+}
+
+/* Dark mode variables */
+:root {
+  --banner-bg: #353434;
+  --banner-text: #fff;
+  --glow-blue: #3b82f6;
+  --glow-shadow: 0 0 2px #3b82f6, 0 0 4px #3b82f6;
+  --banner-animated: #fff;
+  --card-bg: #f9fafb; 
+}
+
+.theme-dark {
+  --banner-bg: #121212;
+  --banner-text: #fff;
+  --glow-blue: #3b82f6;
+  --glow-shadow: 0 0 4px #3b82f6, 0 0 8px #3b82f6;
+  --banner-animated: #fff;
+  --card-bg: #1e293b; 
+  background-color: #111111 !important;
+}
+
+html.theme-dark, body.theme-dark {
+  background-color: #131313 !important;
+}
+
+.theme-light {
+  --banner-bg: #fefefe;
+  --banner-text: #1A1A1A;
+  --glow-blue: #3b82f6;
+  --glow-shadow: 0 0 2px #3b82f6, 0 0 4px #3b82f6;
+  --banner-animated: #3b82f6;
+}
+
+/* Banner background and text */
+.banner-bg {
+  background-color: var(--banner-bg) !important;
+}
+.banner-text {
+  color: var(--banner-text) !important;
+}
+.banner-animated {
+  color: var(--banner-animated) !important;
+}
+
+/* Glowing blue text for all non-banner text */
+.glow-blue {
+  color: var(--glow-blue) !important;
+  text-shadow: var(--glow-shadow);
+}
+
+/* Card background utility */
+.card-bg {
+  background-color: var(--card-bg) !important;
+}
+
+/* Example usage:
+   <div className="banner-bg banner-text">Banner</div>
+   <p className="glow-blue">Glowing blue text</p>
+*/
