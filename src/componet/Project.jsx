@@ -37,7 +37,7 @@ function Project() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mx-2 sm:mx-4 md:mx-8">
         {/* project card 1 */}
         <div className="card-bg dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300 flex flex-col hover:w-[110%] hover:scale-105">
-          <img src={expressloom } alt="Project 1" className="w-full h-36 object-cover"/>
+          <img src={expressloom} alt="Project 1" className="w-full h-36 object-cover"/>
           <div className="flex-1 flex flex-col p-5 pb-3">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">
               🚚 Expressloom (First Fullstack project with html,css, Bootstrap,php, MySQL)
