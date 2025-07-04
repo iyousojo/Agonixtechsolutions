@@ -1,8 +1,19 @@
+import React from "react";
 import Navbar from "../navbar";
 
 
 function Skill() {
-  //  skills data
+  // Add categories for skills and tools
+  const skillCategories = [
+    "All",
+    "Frontend",
+    "Backend",
+    "Database",
+    "CSS Framework",
+    "Tools"
+  ];
+
+  // Add a category field to each skill/tool
   const skills = [
     {
       name: "React",
@@ -19,6 +30,7 @@ function Skill() {
         </svg>
       ),
       desc: "Modern UI library for building fast, interactive interfaces.",
+      category: "Frontend"
     },
     {
       name: "Bootstrap",
@@ -34,6 +46,7 @@ function Skill() {
         </svg>
       ),
       desc: "Popular CSS framework for responsive, mobile-first web development.",
+      category: "CSS Framework"
     },
     {
       name: "Node.js",
@@ -49,6 +62,7 @@ function Skill() {
         </svg>
       ),
       desc: "Backend JavaScript runtime for scalable server-side apps.",
+      category: "Backend"
     },
     {
       name: "PHP",
@@ -71,6 +85,7 @@ function Skill() {
         </svg>
       ),
       desc: "Popular scripting language for dynamic web development.",
+      category: "Backend"
     },
     {
       name: "JavaScript",
@@ -93,6 +108,7 @@ function Skill() {
         </svg>
       ),
       desc: "Core language for interactive and dynamic web experiences.",
+      category: "Frontend"
     },
     {
       name: "Tailwind CSS",
@@ -107,8 +123,9 @@ function Skill() {
         </svg>
       ),
       desc: "Utility-first CSS framework for rapid UI development.",
+      category: "CSS Framework"
     },
-        {
+    {
       name: "MySQL",
       icon: (
         <svg
@@ -129,6 +146,7 @@ function Skill() {
         </svg>
       ),
       desc: "A fast, open-source database system used to manage and organize data efficiently.",
+      category: "Database"
     },
     {
       name: "MongoDB",
@@ -143,10 +161,98 @@ function Skill() {
         </svg>
       ),
       desc: "NoSQL database for flexible, scalable data storage.",
+      category: "Database"
     },
+    // Tools section
+    {
+      name: "Postman",
+      icon: (
+        <svg className="w-8 h-8 text-orange-500" fill="currentColor" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" />
+          <text x="7" y="17" fontSize="8" fill="#fff" fontWeight="bold">PM</text>
+        </svg>
+      ),
+      desc: "API platform for building and testing APIs.",
+      category: "Tools"
+    },
+    {
+      name: "VS Code",
+      icon: (
+        <svg className="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <text x="5" y="18" fontSize="8" fill="#fff" fontWeight="bold">VS</text>
+        </svg>
+      ),
+      desc: "Popular code editor for web and cloud development.",
+      category: "Tools"
+    },
+    {
+      name: "Git",
+      icon: (
+        <svg className="w-8 h-8 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <text x="7" y="17" fontSize="8" fill="#fff" fontWeight="bold">Git</text>
+        </svg>
+      ),
+      desc: "Version control system for tracking code changes.",
+      category: "Tools"
+    },
+    {
+      name: "GitHub",
+      icon: (
+        <svg className="w-8 h-8 text-gray-800 dark:text-gray-200" fill="currentColor" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" />
+          <text x="5" y="17" fontSize="8" fill="#fff" fontWeight="bold">GH</text>
+        </svg>
+      ),
+      desc: "Cloud platform for hosting and collaborating on code.",
+      category: "Tools"
+    },
+    {
+      name: "NPM",
+      icon: (
+        <svg className="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <text x="6" y="17" fontSize="8" fill="#fff" fontWeight="bold">NPM</text>
+        </svg>
+      ),
+      desc: "Node package manager for JavaScript libraries and tools.",
+      category: "Tools"
+    },
+    {
+      name: "Express",
+      icon: (
+        <svg className="w-8 h-8 text-gray-700 dark:text-gray-200" fill="currentColor" viewBox="0 0 24 24">
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <text x="4" y="17" fontSize="8" fill="#fff" fontWeight="bold">Express</text>
+        </svg>
+      ),
+      desc: "Minimal and flexible Node.js web application framework.",
+      category: "Backend"
+    },
+    {
+      name: "Slack",
+      icon: (
+        <svg className="w-8 h-8 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <text x="6" y="17" fontSize="8" fill="#fff" fontWeight="bold">Slack</text>
+        </svg>
+      ),
+      desc: "Collaboration and messaging platform for teams.",
+      category: "Tools"
+    },
+   
     
 
   ];
+
+  const [activeCategory, setActiveCategory] = React.useState("All");
+
+  // Filter skills by category
+  const filteredSkills =
+    activeCategory === "All"
+      ? skills
+      : skills.filter((skill) => skill.category === activeCategory);
 
   return (
     <section
@@ -157,8 +263,7 @@ function Skill() {
           "'Inter', 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif",
       }}
     >
-      
-    
+      <Navbar />
       <div className="max-w-5xl mx-auto flex flex-col items-center mb-12">
         <h2 className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
           Skills Offered
@@ -168,9 +273,29 @@ function Skill() {
           that enable me to build robust, modern, and scalable web applications
           from scratch.
         </p>
+        {/* Category Buttons */}
+        <div className="flex flex-wrap gap-4 mt-2 mb-4">
+          {skillCategories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`px-5 py-2 rounded-full font-semibold border-2 transition-all duration-200
+                ${activeCategory === cat
+                  ? "bg-[#1abcfe] text-white border-[#1abcfe] scale-110 shadow-lg"
+                  : "bg-white dark:bg-gray-800 text-blue-700 dark:text-blue-200 border-blue-200 dark:border-blue-700 hover:bg-[#a259ff] hover:text-white hover:border-[#a259ff] hover:scale-105"}
+              `}
+              style={{
+                boxShadow: activeCategory === cat ? "0 0 16px 2px #1abcfe" : undefined,
+                transition: "all 0.2s"
+              }}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
       </div>
       <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-2 sm:mx-4 md:mx-8">
-        {skills.map((skill) => (
+        {filteredSkills.map((skill) => (
           <div
             key={skill.name}
             className="card-bg border border-blue-100 dark:border-slate-700 rounded-2xl shadow-md p-6 flex flex-col items-center transition-transform hover:scale-105"

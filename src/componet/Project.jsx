@@ -28,7 +28,7 @@ function Project() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mx-2 sm:mx-4 md:mx-8">
         {/* project card 1 */}
         <div className="card-bg dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300 flex flex-col hover:w-[110%] hover:scale-105">
-          <img src="/projectpics/expressloom%20index%20page.png" alt="Project 1" className="w-full h-36 object-cover"/>
+          <img src="/projectpics/expressloom index page.png" alt="Project 1" className="w-full h-36 object-cover"/>
           <div className="flex-1 flex flex-col p-5 pb-3">
             <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">
               🚚 Expressloom (First Fullstack project with html,css, Bootstrap,php, MySQL)
@@ -197,6 +197,33 @@ function Project() {
                 <Github size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
               </a>
               <a href="https://example.com/" target="_blank" rel="noopener noreferrer" aria-label="Live Link">
+                <ExternalLink size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* project card 7 */}
+        <div className="card-bg rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:w-[110%] hover:scale-105">
+          <img src="/projectpics/stopwatch .png" alt="Project 7" className="w-full h-48 object-cover"/>
+          <div className="p-4 pb-2">
+            <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Stopwatch App</h2>
+            <p className="text-blue-600 dark:text-blue-300 text-sm break-words">
+              This is a simple yet functional stopwatch application built with <span className="font-semibold text-blue-700">HTML</span>, <span className="font-semibold text-blue-700">CSS</span>, and <span className="font-semibold text-blue-700">JavaScript</span>. It allows users to start, stop, and reset the timer, providing a basic but effective tool for time management.
+              {!showMore[5] && <>... <button className="text-blue-700 underline" onClick={() => handleToggle(5)}>See more</button></>}
+              {showMore[5] && (
+                <>
+                  <br />
+                  The app features a clean interface with large, easy-to-read numbers and responsive buttons. It's designed to be simple and straightforward, focusing on the core functionality of a stopwatch.<br />
+                  This project was a great exercise in building interactive web applications and improving my skills in <span className="font-semibold text-blue-700">JavaScript</span> for dynamic content updates.
+                  <button className="ml-2 text-blue-700 underline" onClick={() => handleToggle(5)}>See less</button>
+                </>
+              )}
+            </p>
+            <div className="flex space-x-4 mt-4">
+              <a href="https://github.com/iyousojo/stopwatch-app.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <Github size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
+              </a>
+              <a href="https://iyousojo.github.io/stopwatch-app/" target="_blank" rel="noopener noreferrer" aria-label="Live Link">
                 <ExternalLink size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
               </a>
             </div>
