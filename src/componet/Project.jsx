@@ -1,4 +1,4 @@
-import Navbar from "../navbar";
+
 import { Github, ExternalLink } from "lucide-react";
 import React, { useState, useEffect } from "react";
 import    expressloom from "../projectpics/expressloom index page.png"; 
@@ -7,7 +7,7 @@ import    taskManagement from "../projectpics/task management system .png";
 import    builtClock from "../projectpics/time.png";
 import    porforlio from "../projectpics/portfolio1.png";
 import UserManagementSystem from "../projectpics/usermanangementsytem.png";
-import    stopwatch from "../projectpics/stopwatch .png";
+
 
 
 

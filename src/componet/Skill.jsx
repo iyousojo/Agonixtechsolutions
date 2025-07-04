@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../navbar";
 
 
 function Skill() {
@@ -263,7 +262,6 @@ function Skill() {
           "'Inter', 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif",
       }}
     >
-      <Navbar />
       <div className="max-w-5xl mx-auto flex flex-col items-center mb-12">
         <h2 className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">
           Skills Offered
