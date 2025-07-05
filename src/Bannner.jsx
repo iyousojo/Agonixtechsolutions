@@ -60,7 +60,7 @@ function Banner() {
     <div
       className="flex w-full p-4 sm:p-8 md:p-12 mt-8 mb-8 banner-bg banner-text relative"
       style={{
-        minHeight: "80vh",
+        minHeight: "70vh",
         marginTop: "1rem",
         fontFamily:
           "'Inter', 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif",
