@@ -179,10 +179,10 @@ function Project() {
               )}
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/iyousojo/porfilo1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
               </a>
-              <a href="https://solo1.rf.gd/index.html#about/" target="_blank" rel="noopener noreferrer" aria-label="Live Link">
+              <a href="https://dapper-peony-67fb73.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Link">
                 <ExternalLink size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
               </a>
             </div>
@@ -197,11 +197,8 @@ function Project() {
               This <span className="font-semibold text-blue-700">User Management System</span> project was built using <span className="font-semibold text-blue-700">PHP</span>, <span className="font-semibold text-blue-700">CSS</span>, <span className="font-semibold text-blue-700">HTML</span>, and <span className="font-semibold text-blue-700">SQL</span>. I developed it while working on my first project (<span className="font-semibold text-blue-700">Expressloom</span>). It allows for basic user CRUD operations and demonstrates my understanding of backend and frontend integration at an early stage of my learning journey.
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/iyousojo/user-management-system-" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
-              </a>
-              <a href="https://example.com/" target="_blank" rel="noopener noreferrer" aria-label="Live Link">
-                <ExternalLink size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
               </a>
             </div>
           </div>
