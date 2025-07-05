@@ -104,9 +104,9 @@ function Banner() {
             src={bgImg}
             alt="solomon"
             style={{
-              width: "200px",      // increased from 240px
-              height: "200px",
-              margin:"auto" ,    // increased from 240px
+              width: "320px",      // increased from 240px
+              height: "320px",
+              margin:"auto",    // increased from 240px
               objectFit: "cover",
               borderRadius: "50%"
             }}
