@@ -105,7 +105,7 @@ function Banner() {
             alt="solomon"
             style={{
               width: "320px",      // increased from 240px
-              height: "320px",     // increased from 240px
+              height: "200px",     // increased from 240px
               objectFit: "cover",
               borderRadius: "50%"
             }}
