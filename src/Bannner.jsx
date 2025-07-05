@@ -58,7 +58,7 @@ function Banner() {
 
   return (
     <div
-      className="flex w-full p-4 sm:p-8 md:p-12 mt-8 mb-8 banner-bg banner-text relative"
+      className="flex w-full p-4 sm:p-8 md:p-12 mt-20 mb-8 banner-bg banner-text relative"
       style={{
         minHeight: "70vh",
         marginTop: "1rem",
@@ -67,10 +67,10 @@ function Banner() {
       }}
     >
 
-      <div className="w-full flex flex-row items-end justify-between h-full pb-8 pl-2 sm:pl-4 md:pl-8 mt-2 gap-6">
+<div className="w-full flex flex-col md:flex-row items-center md:items-end justify-between h-full pb-8 pl-2 sm:pl-4 md:pl-8 mt-2  mb-20 gap-6">
         <div className="flex-1 flex flex-col items-start">
           <h1
-            className="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-6 tracking-tight text-left banner-text"
+            className="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-6 mt-6 tracking-tight text-left banner-text"
             style={{
               backgroundColor: "var(--banner-bg)",
               padding: "1.5rem 1.5rem",
@@ -99,13 +99,14 @@ function Banner() {
             Contact Me
           </button>
         </div>
-        <div className="flex-1 flex justify-end items-end mt-8 md:mt-0">
+        <div className="flex-1 flex justify-end items-end mt-5 md:mt-0">
           <img
             src={bgImg}
             alt="solomon"
             style={{
-              width: "150px",      // increased from 240px
-              height: "1500px",     // increased from 240px
+              width: "200px",      // increased from 240px
+              height: "200px",
+              margin:"auto" ,    // increased from 240px
               objectFit: "cover",
               borderRadius: "50%"
             }}
