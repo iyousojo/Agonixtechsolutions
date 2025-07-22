@@ -137,6 +137,64 @@ function Skill() {
       desc: "Utility-first CSS framework for rapid UI development.",
       category: "CSS Framework",
     },
+      
+    {
+      name: "figma",
+      icon: (
+        <svg
+          className="w-8 h-8 text-blue-600"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <text
+            x="5"
+            y="18"
+            fontSize="8"
+            fill="#fff"
+            fontWeight="bold"
+          >
+            figma
+          </text>
+        </svg>
+      ),
+      desc: "Markup language for structuring web content.",
+      category: "Frontend",
+    },
+     {
+  name: "Canva",
+  icon: (
+    <svg
+      className="w-8 h-8 text-teal-500"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <text x="5" y="17" fontSize="8" fill="#fff" fontWeight="bold">
+        Canva
+      </text>
+    </svg>
+  ),
+  desc: "Graphic design tool for creating visuals, presentations, and social media assets.",
+  category: "Tools",
+},
+{
+  name: "WordPress",
+  icon: (
+    <svg
+      className="w-8 h-8 text-blue-800"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <text x="4" y="17" fontSize="7" fill="#fff" fontWeight="bold">
+        WP
+      </text>
+    </svg>
+  ),
+  desc: "Popular content management system (CMS) for building and managing websites.",
+  category: "Tools",
+},
     {
       name: "Node.js",
       icon: (
@@ -193,6 +251,29 @@ function Skill() {
       ),
       desc: "Minimal and flexible Node.js web application framework.",
       category: "Backend",
+    },
+     {
+      name: "REST API ",
+      icon: (
+        <svg
+          className="w-8 h-8 text-blue-600"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <text
+            x="5"
+            y="18"
+            fontSize="8"
+            fill="#fff"
+            fontWeight="bold"
+          >
+          REST API 
+          </text>
+        </svg>
+      ),
+      desc: "Connecting frontend to backend data via RESTful APIs.",
+      category: "Tools",
     },
     {
       name: "MySQL",
@@ -331,6 +412,9 @@ function Skill() {
       category: "Tools",
     },
   ];
+
+
+
 
   const [activeCategory, setActiveCategory] = React.useState("All");
 
