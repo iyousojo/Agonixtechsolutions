@@ -1,5 +1,4 @@
 {
-  "homepage": "https://iyousojo.github.io/Agonixtechsolutions/",
   "name": "project1",
   "private": true,
   "version": "0.0.0",
@@ -8,10 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy":   "gh-pages -d dist"
+    "build:github": "vite build --mode github",
+    "build:local": "vite build"
+
   },
+   
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
     "autoprefixer": "^10.4.21",
