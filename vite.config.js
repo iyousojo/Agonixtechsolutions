@@ -7,13 +7,14 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: process.env.VITE_BASE || '/',
+  base: '/', // Always '/' for Vercel
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
   },
 })
+
 
 
 
