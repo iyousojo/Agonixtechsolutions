@@ -411,6 +411,40 @@ function Skill() {
       desc: "Collaboration and messaging platform for teams.",
       category: "Tools",
     },
+    {
+      name: "TypeScript",
+      icon: (
+        <svg
+          className="w-8 h-8 text-blue-700"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <text x="4" y="17" fontSize="8" fill="#fff" fontWeight="bold">
+            TS
+          </text>
+        </svg>
+      ),
+      desc: "Typed superset of JavaScript that compiles to plain JavaScript.",
+      category: "Frontend",
+    },
+    {
+      name: "Docker",
+      icon: (
+        <svg
+          className="w-8 h-8 text-blue-500"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" />
+          <text x="4" y="17" fontSize="8" fill="#fff" fontWeight="bold">
+            Docker
+          </text>
+        </svg>
+      ),
+      desc: "Platform for developing, shipping, and running applications in containers.",
+      category: "Tools",
+    },
   ];
 
 
