@@ -77,7 +77,7 @@ function Project() {
                   <>
                     <br />
                     It features a <span className="font-semibold text-blue-700">basic product layout</span> and a <span className="font-semibold text-blue-700">simple cart-style design</span>.<br />
-                    The site is currently designed for <span className="font-semibold text-blue-700">laptop/desktop view only</span> and is <span className="font-semibold text-red-600">not responsive</span> on other devices. ❌📱<br /><br />
+                    The site is currently designed for <span className="font-semibold text-blue-700">laptop/desktop view only</span> and is <span className="font-semibold text-red-600"> responsive</span> on other devices. <br /><br />
                     <span className="font-semibold text-blue-700">Responsiveness</span> and <span className="font-semibold text-blue-700">mobile-friendly design</span> will be added later to improve usability across all device sizes.<br /><br />
                     This project helps practice <span className="font-semibold text-blue-700">front-end structure</span>, <span className="font-semibold text-blue-700">layout</span>, and <span className="font-semibold text-blue-700">styling</span> without JavaScript or frameworks.<br /><br />
                     <span className="font-semibold text-blue-700">They just use a simple JavaScript slider for Banner images.</span> 🖼️➡️
