@@ -82,12 +82,6 @@ function Project() {
                     This project helps practice <span className="font-semibold text-blue-700">front-end structure</span>, <span className="font-semibold text-blue-700">layout</span>, and <span className="font-semibold text-blue-700">styling</span> without JavaScript or frameworks.<br /><br />
                     <span className="font-semibold text-blue-700">They just use a simple JavaScript slider for Banner images.</span> 🖼️➡️
                     <br />
-                    <span className="block mt-4 text-yellow-600 dark:text-yellow-400">
-                      <span className="font-semibold text-yellow-700">😕 Honestly, I'm not too happy about this project. </span>
-                      <span className="font-semibold text-yellow-500">As I've grown as a developer, I just feel like it's not giving what it should. The lack of responsiveness really bothers me. 📱💔</span>
-                      <br />
-                      <span className="font-semibold text-yellow-700">But hey, every journey starts somewhere! 🚀</span>
-                    </span>
                     <button className="ml-2 text-blue-700 underline" onClick={() => handleToggle(1)}>See less</button>
                   </>
                 )}
