@@ -88,10 +88,10 @@ function Project() {
               </p>
             </div>
             <div className="flex space-x-4 mt-4">
-              <a href="https://iyousojo.github.io/firstproject" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/iyousojo/firstproject.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
               </a>
-              <a href="https://agonixtechsolutions.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Link">
+              <a href="https://iyousojo.github.io/firstproject" target="_blank" rel="noopener noreferrer" aria-label="Live Link">
                 <ExternalLink size={24} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors" />
               </a>
             </div>
